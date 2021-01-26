@@ -23,56 +23,7 @@ public class JV8
 
 	while (retry == 'y')
 	{
-	    test = new SortMethods (100);
-	    c.println ("Testing the Methods: ");
-
-	    for (int count = 0 ; count < 6 ; count++)
-	    {
-		c.println ("Original: " + test.toString ());
-
-		if (count == 0)
-		{
-		    test.bubble ();
-		    c.println ("Bubble:  (sorted = " + test.sorted () + ") " + test.toString ());
-		    c.println ("Press any key to see the next sort: ");
-		}
-		else if (count == 1)
-		{
-		    test.selection ();
-		    c.println ("Selection:  (sorted = " + test.sorted () + ") " + test.toString ());
-		    c.println ("Press any key to see the next sort: ");
-		}
-		else if (count == 2)
-		{
-		    test.insertion ();
-		    c.println ("Insertion:  (sorted = " + test.sorted () + ") " + test.toString ());
-		    c.println ("Press any key to see the next sort: ");
-		}
-		else if (count == 3)
-		{
-		    test.quick ();
-		    c.println ("Quick:  (sorted = " + test.sorted () + ") " + test.toString ());
-		    c.println ("Press any key to see the next sort: ");
-		}
-		else if (count == 4)
-		{
-		    test.comb ();
-		    c.println ("Comb:  (sorted = " + test.sorted () + ") " + test.toString ());
-		    c.println ("Press any key to see the next sort: ");
-		}
-		else
-		{
-		    test.shell ();
-		    c.println ("Shell:  (sorted = " + test.sorted () + ") " + test.toString ());
-		    c.println ("Press any key to move onto the time trials: ");
-		}
-		test.reset ();
-		c.getChar ();
-		c.println ();
-	    }
-
-
-	    c.println ("Time Trials: (sorts are maxed out after passing 10000ms)");
+	    c.println ("The Time Trials: (sorts are maxed out after passing 10000ms)");
 	    c.print ("    Size", 8);
 	    c.print ("  Bubble", 10);
 	    c.print ("Selection", 11);
@@ -166,7 +117,7 @@ public class JV8
 
 	    }
 
-	    c.println ("Would you like to test with a different set of numbers? (y/n)");
+	    c.println ("Would you like to time again with a different randomized set of numbers? (y/n)");
 	    retry = c.getChar ();
 	    while (retry != 'y' && retry != 'n')
 	    {
