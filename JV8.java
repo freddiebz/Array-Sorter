@@ -420,7 +420,7 @@ class SortMethods
 
 
     /*comb
-     Author: Frederica Zhang (based on pseudocode in notes)
+     Author: Frederica Zhang
      Date: Dec. 10, 2019
      Purpose: sort the aClone using a comb sort algorithm
      Parameters: none
@@ -457,7 +457,7 @@ class SortMethods
 
 
     /*shell
-     Author: Frederica Zhang (based on pseudocode in notes)
+     Author: Frederica Zhang 
      Date: Dec. 10, 2019
      Purpose: sort the aClone using a shell sort algorithm
      Parameters: none
